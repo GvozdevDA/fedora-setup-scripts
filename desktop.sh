@@ -1,8 +1,8 @@
 USER=""
 
-dnf install git flatpack dotnet-sdk-10.0
-dnf upgrade
-flatpack install bitwarden blanket brave dicord obsidian telegram pomodorolm spotify steam stimulator zapzap zed zotero
+sudo dnf install git flatpak dotnet-sdk-10.0
+sudo dnf upgrade
+sudo flatpak install bitwarden blanket brave dicord obsidian telegram pomodorolm spotify steam stimulator zapzap zed zotero
 
 ssh-keygen -t ed25519 -C "github" -f ~/.ssh/id_github
 ssh-add ~/.ssh/id_github
