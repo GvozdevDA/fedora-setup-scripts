@@ -2,8 +2,9 @@ USER=""
 
 
 dnf install git cronie
-dng upgrade
+dnf upgrade
 
+eval "$(ssh-agent -s)"
 ssh-keygen -t ed25519 -C "github" -f /.ssh/id_github
 ssh-add /.ssh/id_github
 cat /.ssh/id_github.pub
